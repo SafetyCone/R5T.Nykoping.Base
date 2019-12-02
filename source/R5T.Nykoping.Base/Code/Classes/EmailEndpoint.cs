@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-namespace R5T.Sundsvall
+namespace R5T.Nykoping
 {
     public static class EmailEndpoint
     {
