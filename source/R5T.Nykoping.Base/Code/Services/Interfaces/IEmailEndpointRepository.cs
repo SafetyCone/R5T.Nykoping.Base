@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 using R5T.Endalia;
 
@@ -7,12 +8,12 @@ namespace R5T.Nykoping
 {
     public interface IEmailEndpointRepository
     {
-        void Add(EndpointIdentity endpoint, string emailAddress);
+        Task Add(EndpointIdentity endpoint, string emailAddress);
 
-        bool Exists(EndpointIdentity endpoint);
+        Task<bool> Exists(EndpointIdentity endpoint);
 
-        bool HasEmailAddress(EndpointIdentity endpoint);
-        void SetEmailAddress(EndpointIdentity endpoint, string emailAddress);
-        string GetEmailAddress(EndpointIdentity endpoint);
+        Task<bool> HasEmailAddress(EndpointIdentity endpoint);
+        Task SetEmailAddress(EndpointIdentity endpoint, string emailAddress);
+        Task<string> GetEmailAddress(EndpointIdentity endpoint);
     }
 }
