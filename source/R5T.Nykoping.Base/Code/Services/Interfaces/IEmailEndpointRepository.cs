@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 using R5T.Endalia;
@@ -14,6 +15,7 @@ namespace R5T.Nykoping
 
         Task<bool> HasEmailAddress(EndpointIdentity endpoint);
         Task SetEmailAddress(EndpointIdentity endpoint, string emailAddress);
-        Task<string> GetEmailAddress(EndpointIdentity endpoint);
+
+        Task<Dictionary<EndpointIdentity, string>> GetEmailAddressesByEndpointIdentity(IEnumerable<EndpointIdentity> endpointIdentities);
     }
 }
