@@ -11,6 +11,8 @@ namespace R5T.Nykoping
     {
         Task Add(EndpointIdentity endpoint, string emailAddress);
 
+        Task<List<EndpointIdentity>> GetEndpointIdentitiesByEmailAddress(string emailAddress);
+
         Task<bool> Exists(EndpointIdentity endpoint);
 
         Task<bool> HasEmailAddress(EndpointIdentity endpoint);
