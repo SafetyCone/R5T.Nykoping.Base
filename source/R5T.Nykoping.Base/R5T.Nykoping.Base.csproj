@@ -7,5 +7,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Endalia\source\R5T.Endalia\R5T.Endalia.csproj" />
     <ProjectReference Include="..\..\..\R5T.Magyar\source\R5T.Magyar\R5T.Magyar.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Sundsvall.Base\source\R5T.Sundsvall.Types\R5T.Sundsvall.Types.csproj" />
   </ItemGroup>
 </Project>
