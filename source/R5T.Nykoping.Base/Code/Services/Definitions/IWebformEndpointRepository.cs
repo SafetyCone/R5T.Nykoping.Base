@@ -4,10 +4,13 @@ using System.Threading.Tasks;
 
 using R5T.Endalia;
 
+using R5T.T0064;
+
 
 namespace R5T.Nykoping
 {
-    public interface IWebformEndpointRepository
+    [ServiceDefinitionMarker]
+    public interface IWebformEndpointRepository : IServiceDefinition
     {
         Task Add(EndpointIdentity endpoint, string webformUrl);
 
